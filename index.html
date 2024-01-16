@@ -1,0 +1,118 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+	<title>Quiz Universe 2019</title>
+	<link rel="stylesheet" href="main.css" type="text/css">
+       <link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+</head>
+
+<body>
+	<div id="wrapper">
+        <section class="big-icon">
+            <img src="logo.png" class="icon">
+        </section>
+		<section class="title-holder">
+			<article class="main-title"><strong>Quiz Universe</strong></article>
+			<article class="main-title-section"><strong>Are you the smartest on the universe?</strong></article>
+		</section>
+		<section class="button-holder">
+		
+				<article class="button" onclick="start()">Play</article>
+
+			<a href="feedback.html">
+				<article class="button">Feedback</article>
+			</a>
+            
+               <article class="button" onclick="mech()">Mechanics</article>
+            
+			<a href="about.html">
+				<article class="button">About</article>
+			</a>
+				
+		</section>
+	</div>
+    
+    <div id="ins">
+    
+        <strong style="font-size:3vw;">Instructions</strong>
+        
+        <p id="rules">
+        Welcome to Quiz Universe!! <br>
+        You only have one chance to answer every question. <br>
+        Answer one question wrong and it's already game over. <br><br>
+            <strong>RULES</strong>:  <br>
+        1)  No Coaching, break this rule and you get to die 5 years earlier than your normal lifespan. <br>
+        2)  No Googling/Searching, break this rule and someone would stalk you for the rest of your life.
+        <br>3) No cheating, instant death will be put into option.
+            
+        <br><br>
+            
+        <strong>ENJOY THE GAME :) </strong><br><br>
+            <a href="Quiz2.html">
+                <button class="proc" id="S"><strong>Start the Quiz</strong></button>
+            </a>
+            <a href="index.html">    
+                <button class="proc" id="B"><strong>No! I regret opening this</strong></button>
+            </a>
+            
+            
+        
+        </p>
+    
+    
+    </div>
+    
+    <div id="mech">
+    
+        <strong style="font-size:3vw;">Game Mechanics</strong>
+        
+        <p id="rules" style="font-size:2.2vw;"><br><br><br>
+         The Number of questions you are going to answer depends on your current IQ<br><br>
+         The lesser number questions the Lower your IQ and vice versa<br><br>
+<br><br>
+         
+  
+    
+            
+     <br><br>
+            
+             <button class="proc" id="B" onclick="mechs()"><strong>Back to Menu</strong></button>
+
+            
+            
+        
+        </p>
+    
+    
+    </div>
+	<script src="script.js"></script>
+    <script>
+        
+        var xyz = document.getElementById("ins");
+        function start(){
+            
+            xyz.style.visibility= "visible";
+            
+            
+        }
+            var abs = document.getElementById("mech");
+        
+         function mech(){
+            
+            abs.style.visibility= "visible";
+            
+            
+        }
+    
+         function mechs(){
+            
+            abs.style.visibility= "hidden";
+            
+            
+        }
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+
+
+
+#container2{
+    width: 100%;
+    height: 100%;
+}
+*{
+    text-align: center;
+    font-family: Google Sans;
+    
+}
+@font-face {
+	font-family: 'Google Sans';
+	src: url('gsans.ttf');
+}
+
+body{
+    
+    background-image: url(images/back.jpg);
+}
+
+#status-bar{
+
+    width: 95%;
+    height: 10%;
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    font-size: 5vw;
+    color: white;
+    margin-top:-1vw;
+    
+}
+#status-bar:hover{
+     
+    color: green;
+    text-shadow: 1px 1px lightgreen;
+    transition-duration: .7s;
+    
+}
+#question-container{
+    
+    border: 10px solid  #000099;
+    width: 65%;
+    height: 75%;
+    position: absolute;
+    top: 18%;
+    left: 2.5%;
+    font-size: 2.25vw;
+    font-size-adjust: auto;
+    background-color: #0099ff;
+    font-family: Google Sans;
+    border-radius: 2vw;
+    text-align: center;
+    box-shadow: 3px 3px 20px white;
+    object-position: middle;
+}
+#question-main{
+    text-align:center;
+    vertical-align:middle;
+    font-size:3vw;
+ height:auto;
+    margin-top:4vw;
+    padding:1vw;
+}
+#choice-container{
+
+   
+       width: 27.5%;
+    height: 75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    perspective: 1000px;
+   
+}
+
+.smaller{
+    font-size:2vw;
+    color:skyblue;
+}
+  
+  
+#a{
+
+    width: 90%;
+    height: 21%;
+    float: left;
+    position:relative;
+    margin-top: 2.5%;
+    margin-left: 5%;
+     background-color:  #ffaa80;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 1.5vw;
+    transition: .5s;
+    font-size:2vw;
+}
+
+#b{
+
+    width: 90%;
+    height: 21%;
+    float: left;
+    margin-top: 5.5%;
+    margin-left: 5%;
+      background-color:  #ffaa80;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 1.5vw;
+    position:relative;
+    transition: .5s;
+    font-size:2vw;
+}
+#c{
+ 
+    width: 90%;
+    height: 21%;
+    float: left;
+    margin-top: 2.5%;
+    margin-left: 5%;
+      background-color:  #ffaa80;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 1.5vw;
+    position:relative;
+    transition: .5s;
+    font-size:2vw;
+}
+#d{
+   
+    width: 90%;
+    height: 21%;
+    float: left;
+    margin-top: 2.5%;
+    margin-left: 5%;
+      background-color:  #ffaa80;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 1.5vw;
+    position:relative;
+    transition: .5s;
+    font-size:2vw;
+}
+#TamangSagot{
+     border:1px solid black;
+    width: 100%;
+    height: 100%;
+   background-color:rgba(225, 225, 208, 1);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    font-size: 5vw;
+    color: green;
+    visibility: hidden;
+    transition:.5s;
+    vertical-align:middle;
+    z-index:1;
+}
+#a:hover,
+#b:hover,
+#c:hover,
+#d:hover{
+    transition:.5s;
+    color:orange;
+    background-color:black;
+}
+.proc{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 10%;
+    font-size: 2vw;
+    background-color: midnightblue;
+    border: none;
+    color: white;
+
+    z-index:1;
+
+}
+.proc:hover{
+    transition-duration: .7s;
+    background-color: white;
+    color: midnightblue;
+    
+    
+}
+
+#Incorrect{
+    border:1px solid black;
+    width: 100%;
+    height: 100%;
+background-color:rgba(225, 225, 208, .5);
+    line-height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    font-size: 5vw;
+    color: red;
+    visibility: hidden;
+    z-index:1;
+    
+}
+#rollcred{
+    border:1px solid black;
+    width: 100%;
+    height: 100%;
+ background-image:url(images/back.jpg);
+    line-height: 575px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    font-size: 5vw;
+    color: blue;
+    visibility: hidden ;
+    font-family: Google Sans;
+    z-index:1;
+    font-shadow: 0 0 2vw white;
+}
+#playagain{
+    width: 25%;
+    height: 25%;    
+    font-size: 3vw;   
+     
+    color:white;
+    border: none;
+}
+#playagain:hover{
+    background-color: white;   
+    color: blue;
+    transition-duration: .5s;
+    border: 0px solid blue;
+}
+strong{
+    line-height: 200%;
+    
+    
+}
+
+#question-pic{
+    width:60%;
+    height:20vw;
+box-shadow:0 0 2vw gray;
+    margin:auto;
+}
+#pic{
+    width:100%;
+    height:100%;
+}

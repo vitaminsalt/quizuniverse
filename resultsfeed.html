@@ -1,0 +1,87 @@
+<! DOCTYPE html5>
+<html>
+
+<head>
+	<title>Output - Feedback and Game Survey</title>
+	<link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+	<script src="script.js"></script>
+</head>
+
+<body onload="retrieveFunc()">
+	<div id="wrapper">
+
+
+		<section class="title-holder">
+			<a href="index.html">
+				<article class="main-title-about"><strong>Quiz Universe</strong></article>
+			</a>
+			<article class="main-title-section-about"><strong>Are you the smartest on the universe?</strong></article>
+		</section>
+		<div id="blocker">
+		</div>
+		<div id="main-survey">
+			<section class="top-title">Feedback Form</section>
+			<section class="top-title-desc">These are what you have shared with us. Thanks!</section>
+
+			<form id="basic">
+            <fieldset id="basic">
+                <legend>Basic Information</legend>
+                <fieldset >
+                    <legend><strong>Gender</strong></legend>
+                        <p id="answer1"></p>
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Birth Date</strong></legend>
+                   <p id="answer2"></p>
+                </fieldset>
+                 <fieldset>
+                    <legend><strong>E-mail</strong></legend>
+                    <p id="answer3"></p>
+                </fieldset>
+               
+            </fieldset>
+            
+        </form>
+        <form id="basic">
+            <fieldset id="proper-main">
+                <legend >Feedback Proper</legend>
+                <fieldset>
+                    <legend class="field1"><strong>Question #1</strong></legend>
+                    <p class="main-quest"> On a scale of 1 to 10, how likely are you going to recommend this game to a friend?
+                    <p id="answer4"></p>
+                </fieldset>
+                
+                <fieldset>
+                	<legend class="field1"><strong>Question #2</strong></legend>
+                    <p class="main-quest"> From the following choices how hard was the game for you?</p>
+                    <p id="answer5"></p>
+                </fieldset>
+
+ <fieldset>
+                	<legend class="field1"><strong>Question #3</strong></legend>
+                    <p class="main-quest"> How much have you learned while playing the game?</p>
+                   <p id="answer6"></p>
+                </fieldset>
+
+<fieldset>
+                	<legend class="field1"><strong>Question #4</strong></legend>
+                    <p class="main-quest">From your observations, which major subjects are included in the game?</p>
+                    <p id="answer7"></p>
+
+                </fieldset>
+                <fieldset>
+                	<legend class="field1"><strong>Question #5</strong></legend>
+                    <p class="main-quest"> Any comments/suggestions for the game?</p>
+                   <p id="answer8">hi</p>
+                </fieldset>
+                <input type="button" class="res" value="GO HOME" onclick="validate()">
+            </fieldset>
+        </form>
+		</div>
+	</div>
+    <script src="jquery-3.4.1.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

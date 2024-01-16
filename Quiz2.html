@@ -1,0 +1,77 @@
+<html>
+<head>
+<link rel="stylesheet" href="Quiz2.css" type="text/css">    
+       <link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+       <title> Quiz Universe 2019 </title>
+    </head>
+<body onload="RandomizeFunc(), shuffle()">
+
+
+        
+        <div id="container2">
+            
+        </div>
+        <a href="index.html">
+        <div id="status-bar">
+            
+           Quiz Universe 2019
+        
+        </div>
+
+    </a>
+        
+
+ <div id="rollcred">
+    
+        <strong> <br>Congratulations! You have successfully answered all the questions in the Universe. </strong>
+        
+    <a href="index.html">
+        <button id="next-question" class="proc">Play Again</button>
+        </a>
+    </div>
+        
+    
+    
+    <div id="TamangSagot"><br><br>Correct! <br> Score: <span id="current"></span>
+    
+        <button id="next-question" class="proc" onclick="nextfunc()">Next Question</button>
+    
+    </div>
+    
+    <div id="Incorrect"><br><br><strong>Game Over!</strong><br> You chose the wrong answer.<br>Score: <span id="finscore"></span>
+
+        
+    <a href="index.html">
+        <button id="Try-again"  class="proc">Play again</button>
+        </a>
+    </div>
+    
+
+        <div id="question-container">
+          <div id="question-main"></div> 
+          <div id="question-pic">
+              <img src="" id="pic"> 
+          </div> 
+        </div>
+    
+        <div id="choice-container">
+            
+            <button id="b" class="choices" onclick="Incorrect()" ></button>
+            <button id="c"  class="choices" onclick="Incorrect()" ></button>
+            <button id="a"  class="choices" onclick="Correct()" ></button>
+            <button id="d"  class="choices" onclick="Incorrect()"></button>
+            
+        </div>
+    
+   
+    
+    
+    
+<script src="quizjs.js">
+    
+  
+</script>    
+    
+</body>
+    
+</html>

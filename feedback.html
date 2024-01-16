@@ -1,0 +1,136 @@
+<! DOCTYPE html5>
+<html>
+
+<head>
+	<title>Feedback and Game Survey</title>
+	<link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+	<script src="script2.js"></script>
+</head>
+
+<body >
+	<div id="wrapper">
+
+
+		<section class="title-holder">
+			<a href="index.html">
+				<article class="main-title-about"><strong>Quiz Universe</strong></article>
+			</a>
+			<article class="main-title-section-about"><strong>Are you the smartest on the universe?</strong></article>
+		</section>
+		<div id="blocker">
+		</div>
+		<div id="main-survey">
+			<section class="top-title">Feedback</section>
+			<section class="top-title-desc">Having disputes or just want to thank the creators?<br><br><em>NOTE: We have only used variables to save data because cookies need a database to be saved. See more online.</em></section>
+
+			<form id="basic" action="resultsfeed.html" method="GET">
+            <fieldset id="basic">
+                <legend>Basic Information</legend>
+                <fieldset >
+                    <legend><strong>Gender</strong></legend>
+                    <select id="gen">
+                    	<option> Male </option>
+                    	<option> Female</option>
+                    	<option> Gay </option>
+                    	<option> Lesbian </option>
+                    	<option>Bisexual</option>
+                    	<option> Prefer not to say</option>
+                    	<option> Other </option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Birth Date</strong></legend>
+                    <select id="month">
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <input type="number" id="day" min="1"max="31" placeholder="1-31" value="">
+                    <input type="number" id="year" minlength="4" maxlength="4" placeholder="2019" value="">
+                </fieldset>
+                 <fieldset>
+                    <legend><strong>E-mail</strong></legend>
+                    <input id="ema" type="email" name="e-mail" placeholder="example@server.com">
+                    <p class="cap"><em> We won't collect your personal information nor send you nonsense things. </em></p>
+                </fieldset>
+                <input type="reset" class="res">
+            </fieldset>
+            
+        </form>
+        <form id="basic">
+            <fieldset id="proper-main">
+                <legend >Feedback Proper</legend>
+                <fieldset>
+                    <legend class="field1"><strong>Question #1</strong></legend>
+                    <p class="main-quest"> On a scale of 1 to 10, how likely are you going to recommend this game to a friend?
+                    <input id="q1" name="ques1" type="number" min="1" max="10" placeholder="Input your scale here">
+                </fieldset>
+                
+                <fieldset>
+                	<legend class="field1"><strong>Question #2</strong></legend>
+                    <p class="main-quest"> From the following choices how hard was the game for you?</p>
+                    <input  id="choice1" type="radio" name="difficulty" value="Very Hard" checked>      Very Hard<br>
+                    <input  id="choice2" type="radio" name="difficulty" value="Hard">      Hard<br>
+                    <input  id="choice3" type="radio" name="difficulty" value="Slightly Hard">      Slightly Hard<br>
+                    <input  id="choice4" type="radio" name="difficulty" value="Either Easy or Hard">      Either Easy or Hard<br>
+                    <input  id="choice5" type="radio" name="difficulty" value="Slightly Easy">      Slightly Easy<br>
+                    <input  id="choice6" type="radio" name="difficulty" value="Easy">      Easy<br>
+                    <input  id="choice7" type="radio" name="difficulty" value="Very Easy">      Very Easy<br>
+                </fieldset>
+
+ <fieldset>
+                	<legend class="field1"><strong>Question #3</strong></legend>
+                    <p class="main-quest"> How much have you learned while playing the game?</p>
+                    <select id="q3" placeholder="Choose an amount">
+                    	<option>Very Much </option>
+                    	<option>Good Enough </option>
+                    	<option>A little </option>
+                    	<option>None at all</option>
+                    </select>
+                </fieldset>
+
+<fieldset>
+                	<legend class="field1"><strong>Question #4</strong></legend>
+                    <p class="main-quest">From your observations, which major subjects are included in the game?</p>
+                    <input type="checkbox" name="q4" value=" Mathematics" class="subject"> Mathematics<br>
+                    <input type="checkbox" name="q4" class=" Biology" value="bio"> Biology<br>
+                    <input type="checkbox" name="q4" value=" Physics" class="subject"> Physics<br>
+                    <input type="checkbox" name="q4" value=" Chemistry" class="subject"> Chemistry<br>
+                    <input type="checkbox" name="q4" value=" Statistics" class="subject"> Statistics<br>
+                    <input type="checkbox" name="q4" value=" Health" class="subject"> Health<br>
+                    <input type="checkbox" name="q4" value=" Music" class="subject"> Music<br>
+                    <input type="checkbox" name="q4" value=" Physical Education" class="subject"> Physical Education<br>
+                    <input type="checkbox" name="q4" value=" Social Science" class="subject"> Social Science<br>
+                    <input type="checkbox" name="q4" value=" Computer Science" class="subject"> Computer Science<br>
+                    <input type="checkbox" name="q4" value=" Filipino" class="subject"> Filipino<br>
+                    <input type="checkbox" name="q4" value=" English" class="subject"> English<br>
+                    <input type="checkbox" name="q4" value=" ADTech" class="subject"> ADTech<br>
+                    <input type="checkbox" name="q4" value=" Earth Science" class="subject"> Earth Science<br>
+                    <input type="checkbox" name="q4" value=" Others" class="subject"> Others<br>
+
+                </fieldset>
+                <fieldset>
+                	<legend class="field1"><strong>Question #5</strong></legend>
+                    <p class="main-quest"> Any comments/suggestions for the game?</p>
+                   <input id="q5" type="text" maxlength="160" name="suggestion" placeholder="160 characters only">
+                </fieldset>
+                <input type="button" class="res" value="Submit" onclick="start()">
+            </fieldset>
+        </form>
+		</div>
+	</div>
+    <script src="jquery-3.4.1.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
